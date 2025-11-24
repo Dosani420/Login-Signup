@@ -72,12 +72,18 @@ select {
     font-size: 0.95rem;
     background-color: #f7f8ff;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    color: #1e1e2f;
 }
 
 input:focus {
     outline: none;
     border-color: #6b73ff;
     box-shadow: 0 0 0 3px rgba(107, 115, 255, 0.2);
+}
+
+input::placeholder {
+    color: #8384a6;
+    opacity: 1;
 }
 
 select {
