@@ -62,7 +62,8 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+select {
     width: 100%;
     margin: 0.35rem 0 1rem;
     padding: 0.85rem 1rem;
@@ -75,6 +76,27 @@ input[type="password"] {
 
 input:focus {
     outline: none;
+    border-color: #6b73ff;
+    box-shadow: 0 0 0 3px rgba(107, 115, 255, 0.2);
+}
+
+select {
+    appearance: none;
+    background-color: #f7f8ff;
+    background-image: linear-gradient(45deg, transparent 50%, #6b73ff 50%), linear-gradient(135deg, #6b73ff 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(50% - 2px), calc(100% - 12px) calc(50% - 2px);
+    background-size: 8px 8px, 8px 8px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: #1e1e2f;
+}
+
+select option {
+    color: #1e1e2f;
+    background-color: #ffffff;
+}
+
+select:focus {
     border-color: #6b73ff;
     box-shadow: 0 0 0 3px rgba(107, 115, 255, 0.2);
 }

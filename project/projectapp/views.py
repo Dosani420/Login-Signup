@@ -16,11 +16,13 @@ def register(request):
         fullname = request.POST.get("fullname")
         email = request.POST.get("email")
         password = request.POST.get("password")
+        role = request.POST.get("role")
 
         person1 = person(
             name=fullname,
             email=email,
-            password=password
+            password=password,
+            role=role
         )
         person1.save()
 
